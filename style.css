@@ -1,0 +1,102 @@
+body{
+    background-color: rgb(207, 207, 207);
+    height: 100%;
+    width: 100%;
+}
+
+.headshot{
+    float: left;
+    height: 250px;
+    /* width: 20%; */
+    /* margin: 25px; */
+    margin-bottom:10px;
+    margin-right:1em;
+    margin-left:1.5em;
+    border:solid rgb(49, 134, 160) 15px;
+    /* width:30%; */
+}
+
+header{
+    display: flex
+    justify-content: flex-end
+    
+}
+
+nav ul{
+    display:flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-around;
+}
+
+
+.mywork img{
+    margin: 7px;
+    display:flex
+   
+}
+
+.mywork:hover img{
+    color: yellow;
+    opacity: .5;
+    cursor: pointer;
+    
+}
+
+
+
+section{
+    width:100%;
+    padding:3em;
+}
+
+.aboutme{
+    /* width:100%;
+    padding:3em; */
+}
+
+.green{
+    width: 400px;
+    height: 350px;
+}
+
+.colors{
+    height: 250px;
+    width: 250px;
+}
+.camera{
+    height: 150px;
+    width: 175;
+}
+
+.footer{
+    display: inline;
+    justify-content: center;
+}
+
+
+/*rowandcols*/
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  
+  .column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+  }
+
+  @media screen and (max-width: 768px) {
+    header {
+      flex-direction: column;
+    }
+  
+    main {
+      max-width: 1200px;
+    }
+  }
